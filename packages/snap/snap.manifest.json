@@ -1,10 +1,10 @@
 {
   "version": "0.1.0",
-  "description": "A simple MetaMask snap to show gas fee estimations pre-signature for a transaction.",
+  "description": "A simple MetaMask Snap to show current Ethereum gas fees.",
   "proposedName": "DCO Gas Fee",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MetaMask/template-snap-monorepo.git"
+    "url": "https://github.com/drewcook/gas-fee-snap.git"
   },
   "source": {
     "shasum": "ztYE+11iqIcKrT6TfmGBxpOcctG0ErMH07fujd97nrk=",
@@ -12,7 +12,7 @@
       "npm": {
         "filePath": "dist/bundle.js",
         "iconPath": "images/gas.svg",
-        "packageName": "snap",
+        "packageName": "dco-gas-fees-snap",
         "registry": "https://registry.npmjs.org/"
       }
     }

@@ -1,11 +1,11 @@
 {
-  "name": "snap",
-  "version": "0.1.0",
+  "name": "dco-gas-fees-snap",
+  "version": "0.2.0",
   "private": true,
-  "description": "Getting Ethereum gas fees within a MetaMask Snap.",
+  "description": "A simple MetaMask Snap to show current Ethereum gas fees.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MetaMask/template-snap-monorepo.git"
+    "url": "https://github.com/drewcook/gas-fee-snap.git"
   },
   "license": "(MIT-0 OR Apache-2.0)",
   "main": "src/index.ts",
