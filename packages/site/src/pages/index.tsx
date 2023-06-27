@@ -1,19 +1,19 @@
 import { useContext } from 'react';
 import styled from 'styled-components';
-import { MetamaskActions, MetaMaskContext } from '../hooks';
+import {
+  Card,
+  ConnectButton,
+  GetGasFeesButton,
+  InstallFlaskButton,
+  ReconnectButton,
+} from '../components';
+import { MetaMaskContext, MetamaskActions } from '../hooks';
 import {
   connectSnap,
   getSnap,
-  sendHello,
+  sendGetGasFees,
   shouldDisplayReconnectButton,
 } from '../utils';
-import {
-  ConnectButton,
-  InstallFlaskButton,
-  ReconnectButton,
-  SendHelloButton,
-  Card,
-} from '../components';
 
 const Container = styled.div`
   display: flex;
@@ -117,9 +117,9 @@ const Index = () => {
     }
   };
 
-  const handleSendHelloClick = async () => {
+  const handleGetGasFeesClick = async () => {
     try {
-      await sendHello();
+      await sendGetGasFees();
     } catch (e) {
       console.error(e);
       dispatch({ type: MetamaskActions.SetError, payload: e });
@@ -185,12 +185,12 @@ const Index = () => {
         )}
         <Card
           content={{
-            title: 'Send Hello message',
+            title: 'Get Gas Fees',
             description:
-              'Display a custom message within a confirmation screen in MetaMask.',
+              'Get the current Ethereum gas fees powered by beaconcha.in via an API call from the snap.',
             button: (
-              <SendHelloButton
-                onClick={handleSendHelloClick}
+              <GetGasFeesButton
+                onClick={handleGetGasFeesClick}
                 disabled={!state.installedSnap}
               />
             ),
