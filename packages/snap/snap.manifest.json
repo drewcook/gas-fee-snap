@@ -12,7 +12,7 @@
       "npm": {
         "filePath": "dist/bundle.js",
         "iconPath": "images/gas.svg",
-        "packageName": "dco-gas-fees-snap",
+        "packageName": "dco-gas-fee-snap",
         "registry": "https://registry.npmjs.org/"
       }
     }
