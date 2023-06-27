@@ -1,7 +1,7 @@
 {
   "name": "dco-gas-fees-snap",
   "version": "0.2.0",
-  "private": true,
+  "private": false,
   "description": "A simple MetaMask Snap to show current Ethereum gas fees.",
   "repository": {
     "type": "git",
